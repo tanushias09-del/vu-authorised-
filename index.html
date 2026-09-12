@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VU Service Center | TV Repair Service in Mayur Vihar Phase 3 & Noida</title>
+    <meta name="description" content="VU SERVICE CENTRE, vu service center, vu service centre near me, best vu repair service, best television repair, best vu tv repair, Expert TV repair service in Mayur Vihar Phase 3, Noida Sector 51, Hoshiyarpur and surrounding 10km areas. Professional technician home visits for LED, LCD & Smart TVs.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon1.png">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="TV Repair Service | VU Service Center">
+    <meta property="og:description" content="Fast, reliable and convenient TV repair service at your home. Book a technician visit today.">
+    <meta property="og:type" content="website">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        orange: {
+                            DEFAULT: '#FF6B00',
+                            dark: '#E65E00',
+                            light: '#FFF4EE',
+                        },
+                        charcoal: '#1E293B',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- LocalBusiness Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "VU Service Center",
+      "telephone": "+919718967233",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Plot No - 2C 68, Hoshiyarpur, Block E, Sector 51",
+        "addressLocality": "Noida / Mayur Vihar Extension",
+        "addressRegion": "Uttar Pradesh",
+        "postalCode": "201303",
+        "addressCountry": "IN"
+      },
+      "priceRange": "₹₹",
+      "servicedArea": "Mayur Vihar Phase 3, Noida Sector 51, Hoshiyarpur, Kondli, Gharoli, Vasundhara Enclave"
+    }
+    </script>
+</head>
+<body class="bg-white text-charcoal font-sans antialiased selection:bg-orange selection:text-white">
+
+
+
+    <!-- Sticky Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Custom Logo -->
+            <a href="#home" onclick="showPage('home')" class="flex items-center gap-3">
+                <div class="bg-orange text-white p-2.5 rounded-xl shadow-md flex items-center justify-center font-black text-xl tracking-tighter">
+                    <i class="fa-solid fa-tv"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-black tracking-tight text-charcoal block leading-none">VU <span class="text-orange">SERVICE CENTER</span></span>
+                    <span class="text-[10px] text-gray-500 font-bold uppercase tracking-widest">TV Repair & Home Service</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden lg:flex items-center gap-7 font-bold text-sm text-gray-700">
+                <a href="#home" onclick="showPage('home')" class="hover:text-orange transition">Home</a>
+                <a href="#services" onclick="showPage('home'); scrollToSection('services');" class="hover:text-orange transition">Services</a>
+                <a href="#coverage" onclick="showPage('coverage')" class="hover:text-orange transition text-orange">15km Coverage (SEO)</a>
+                <a href="#gallery" onclick="showPage('home'); scrollToSection('gallery');" class="hover:text-orange transition">Gallery</a>
+                <a href="#about" onclick="showPage('home'); scrollToSection('about');" class="hover:text-orange transition">About</a>
+                <a href="#warranty" onclick="showPage('home'); scrollToSection('warranty');" class="hover:text-orange transition">Warranty</a>
+                <a href="#contact" onclick="showPage('home'); scrollToSection('contact');" class="hover:text-orange transition">Contact</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="hidden sm:flex items-center gap-3">
+                <a href="#booking" onclick="showPage('home'); scrollToSection('booking');" class="bg-orange hover:bg-orange-dark text-white text-sm font-bold px-6 py-3 rounded-xl shadow-md transition transform active:scale-95 flex items-center gap-2">
+                    <i class="fa-solid fa-calendar-check"></i> Book a Repair
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="lg:hidden text-charcoal focus:outline-none p-2 rounded-lg hover:bg-gray-100 transition" aria-label="Toggle menu">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-gray-200 px-4 pt-3 pb-6 space-y-3 shadow-lg">
+            <a href="#home" onclick="showPage('home'); toggleMobileMenu();" class="block py-2 font-bold text-gray-700 hover:text-orange border-b border-gray-100">Home</a>
+            <a href="#services" onclick="showPage('home'); scrollToSection('services'); toggleMobileMenu();" class="block py-2 font-bold text-gray-700 hover:text-orange border-b border-gray-100">Services</a>
+            <a href="#coverage" onclick="showPage('coverage'); toggleMobileMenu();" class="block py-2 font-bold text-orange border-b border-gray-100">15km Coverage (SEO)</a>
+            <a href="#gallery" onclick="showPage('home'); scrollToSection('gallery'); toggleMobileMenu();" class="block py-2 font-bold text-gray-700 hover:text-orange border-b border-gray-100">Gallery</a>
+            <a href="#about" onclick="showPage('home'); scrollToSection('about'); toggleMobileMenu();" class="block py-2 font-bold text-gray-700 hover:text-orange border-b border-gray-100">About Us</a>
+            <a href="#warranty" onclick="showPage('home'); scrollToSection('warranty'); toggleMobileMenu();" class="block py-2 font-bold text-gray-700 hover:text-orange border-b border-gray-100">Warranty</a>
+            <a href="#contact" onclick="showPage('home'); scrollToSection('contact'); toggleMobileMenu();" class="block py-2 font-bold text-gray-700 hover:text-orange border-b border-gray-100">Contact</a>
+            <div class="pt-2">
+                <a href="#booking" onclick="showPage('home'); scrollToSection('booking'); toggleMobileMenu();" class="block w-full text-center bg-orange text-white font-bold py-3 rounded-xl shadow-md">
+                    Book a Repair
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main id="main-content">
+        
+        <!-- ================= HOME PAGE VIEW ================= -->
+        <div id="page-home" class="page-view">
+            
+            <!-- Hero Section -->
+            <section class="relative bg-gradient-to-br from-orange-light via-white to-gray-50 py-16 lg:py-24 overflow-hidden border-b border-gray-100">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                            <div class="inline-flex items-center gap-2 bg-orange/10 border border-orange/20 text-orange px-4 py-1.5 rounded-full text-xs font-bold tracking-wide">
+                                <i class="fa-solid fa-house-chimney"></i> Doorstep Service in Mayur Vihar & Noida
+                            </div>
+                            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight text-charcoal">
+                                Expert TV Repair Service at Your <span class="text-orange">Home</span>
+                            </h1>
+                            <p class="text-lg text-gray-600 max-w-2xl mx-auto lg:mx-0">
+                                Fast, reliable and convenient TV repair service around Mayur Vihar Phase 3, Noida Sector 51 & 15km surrounding areas. Book a certified technician visit today.
+                            </p>
+                            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                                <a href="#booking" onclick="scrollToSection('booking')" class="w-full sm:w-auto bg-orange hover:bg-orange-dark text-white font-bold px-8 py-4 rounded-xl shadow-lg transition transform active:scale-95 text-center flex items-center justify-center gap-2">
+                                    <i class="fa-solid fa-calendar-check"></i> Book a Repair
+                                </a>
+                                <a href="tel:+919718967233" class="w-full sm:w-auto bg-white hover:bg-gray-50 border border-gray-300 text-charcoal font-bold px-8 py-4 rounded-xl transition text-center flex items-center justify-center gap-2 shadow-sm">
+                                    <i class="fa-solid fa-phone text-orange"></i> Call +91 97189 67233
+                                </a>
+                            </div>
+                            <div class="pt-4 border-t border-gray-200 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-gray-600 font-bold">
+                                <span><i class="fa-solid fa-circle-check text-orange mr-1"></i> Home Service</span>
+                                <span><i class="fa-solid fa-circle-check text-orange mr-1"></i> Expert Technicians</span>
+                                <span><i class="fa-solid fa-circle-check text-orange mr-1"></i> 90-Day Warranty</span>
+                                <span><i class="fa-solid fa-circle-check text-orange mr-1"></i> WITH LOW SERVICE CHARGE</span>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-5 flex justify-center">
+                            <div class="bg-charcoal text-white p-8 rounded-3xl shadow-2xl max-w-md w-full relative border border-gray-800">
+                                <div class="absolute -top-3 -right-3 bg-orange text-white text-xs font-bold px-3 py-1 rounded-full shadow">
+                                    Instant Response
+                                </div>
+                                <div class="text-center space-y-4">
+                                    <div class="w-20 h-20 bg-orange/20 text-orange rounded-full flex items-center justify-center mx-auto text-3xl shadow-inner">
+                                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-white">Need Urgent TV Repair?</h3>
+                                    <p class="text-sm text-gray-300">Direct booking available via WhatsApp with pre-filled message templates.</p>
+                                    <div class="pt-2">
+                                        <a href="https://wa.me/919718967233?text=Hello%20VU%20Service%20Center,%20I%20would%20like%20to%20book%20a%20TV%20repair%20service%20at%20my%20home." target="_blank" rel="noopener" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3.5 px-4 rounded-xl shadow transition flex items-center justify-center gap-2">
+                                            <i class="fa-brands fa-whatsapp text-xl"></i> Book via WhatsApp
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Service Highlights -->
+            <section class="py-16 bg-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center max-w-3xl mx-auto mb-12">
+                        <h2 class="text-xs uppercase tracking-widest text-orange font-black mb-2">Why Choose Us</h2>
+                        <h3 class="text-3xl font-black text-charcoal">Reliable Service at Your Doorstep</h3>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div class="bg-gray-50 border border-gray-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition">
+                            <div class="w-12 h-12 bg-orange/10 text-orange rounded-xl flex items-center justify-center text-xl mb-4 font-bold">
+                                <i class="fa-solid fa-house"></i>
+                            </div>
+                            <h4 class="text-lg font-bold text-charcoal mb-2">Home Visit Service</h4>
+                            <p class="text-sm text-gray-600">Technician visits your home for convenient TV repair.</p>
+                        </div>
+                        <div class="bg-gray-50 border border-gray-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition">
+                            <div class="w-12 h-12 bg-orange/10 text-orange rounded-xl flex items-center justify-center text-xl mb-4 font-bold">
+                                <i class="fa-solid fa-user-gear"></i>
+                            </div>
+                            <h4 class="text-lg font-bold text-charcoal mb-2">Experienced Technicians</h4>
+                            <p class="text-sm text-gray-600">Professional troubleshooting and repair service.</p>
+                        </div>
+                        <div class="bg-gray-50 border border-gray-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition">
+                            <div class="w-12 h-12 bg-orange/10 text-orange rounded-xl flex items-center justify-center text-xl mb-4 font-bold">
+                                <i class="fa-solid fa-file-invoice-dollar"></i>
+                            </div>
+                            <h4 class="text-lg font-bold text-charcoal mb-2">Transparent Service</h4>
+                            <p class="text-sm text-gray-600">Explain the issue and applicable charges before proceeding with repair.</p>
+                        </div>
+                        <div class="bg-gray-50 border border-gray-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition">
+                            <div class="w-12 h-12 bg-orange/10 text-orange rounded-xl flex items-center justify-center text-xl mb-4 font-bold">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <h4 class="text-lg font-bold text-charcoal mb-2">90-Day Warranty</h4>
+                            <p class="text-sm text-gray-600">Eligible repair services include a 90-day service warranty, subject to warranty terms.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TV Repair Services Section -->
+            <section id="services" class="py-16 bg-gray-50 border-t border-gray-100">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center max-w-3xl mx-auto mb-12">
+                        <h2 class="text-xs uppercase tracking-widest text-orange font-black mb-2">Our Expertise</h2>
+                        <h3 class="text-3xl font-black text-charcoal">TV Repair Services</h3>
+                        <p class="text-gray-600 mt-2">Comprehensive diagnostics and repair solutions for various television issues.</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition border border-gray-200">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-12 h-12 bg-orange-light text-orange rounded-xl flex items-center justify-center text-xl">
+                                    <i class="fa-solid fa-tv"></i>
+                                </div>
+                                <h4 class="text-lg font-bold text-charcoal">LED TV Repair</h4>
+                            </div>
+                            <p class="text-sm text-gray-600">Troubleshooting and repair for LED televisions.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition border border-gray-200">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-12 h-12 bg-orange-light text-orange rounded-xl flex items-center justify-center text-xl">
+                                    <i class="fa-solid fa-display"></i>
+                                </div>
+                                <h4 class="text-lg font-bold text-charcoal">LCD TV Repair</h4>
+                            </div>
+                            <p class="text-sm text-gray-600">Diagnosis and repair of LCD TV issues.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition border border-gray-200">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-12 h-12 bg-orange-light text-orange rounded-xl flex items-center justify-center text-xl">
+                                    <i class="fa-solid fa-house-laptop"></i>
+                                </div>
+                                <h4 class="text-lg font-bold text-charcoal">Smart TV Repair</h4>
+                            </div>
+                            <p class="text-sm text-gray-600">Troubleshooting for Smart TV hardware and software-related issues.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition border border-gray-200">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-12 h-12 bg-orange-light text-orange rounded-xl flex items-center justify-center text-xl">
+                                    <i class="fa-solid fa-power-off"></i>
+                                </div>
+                                <h4 class="text-lg font-bold text-charcoal">TV Not Turning On</h4>
+                            </div>
+                            <p class="text-sm text-gray-600">Diagnosis of power and startup problems.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition border border-gray-200">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-12 h-12 bg-orange-light text-orange rounded-xl flex items-center justify-center text-xl">
+                                    <i class="fa-solid fa-circle-exclamation"></i>
+                                </div>
+                                <h4 class="text-lg font-bold text-charcoal">No Display / Black Screen</h4>
+                            </div>
+                            <p class="text-sm text-gray-600">Diagnosis of display and related hardware problems.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition border border-gray-200">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-12 h-12 bg-orange-light text-orange rounded-xl flex items-center justify-center text-xl">
+                                    <i class="fa-solid fa-volume-xmark"></i>
+                                </div>
+                                <h4 class="text-lg font-bold text-charcoal">No Sound</h4>
+                            </div>
+                            <p class="text-sm text-gray-600">Troubleshooting TV audio problems.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition border border-gray-200">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-12 h-12 bg-orange-light text-orange rounded-xl flex items-center justify-center text-xl">
+                                    <i class="fa-solid fa-sliders"></i>
+                                </div>
+                                <h4 class="text-lg font-bold text-charcoal">Screen / Picture Problems</h4>
+                            </div>
+                            <p class="text-sm text-gray-600">Diagnosis of picture, backlight and display-related issues.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition border border-gray-200">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-12 h-12 bg-orange-light text-orange rounded-xl flex items-center justify-center text-xl">
+                                    <i class="fa-solid fa-plug"></i>
+                                </div>
+                                <h4 class="text-lg font-bold text-charcoal">HDMI / Port Problems</h4>
+                            </div>
+                            <p class="text-sm text-gray-600">Troubleshooting HDMI and connectivity-related issues.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition border border-gray-200">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-12 h-12 bg-orange-light text-orange rounded-xl flex items-center justify-center text-xl">
+                                    <i class="fa-solid fa-microchip"></i>
+                                </div>
+                                <h4 class="text-lg font-bold text-charcoal">Software / Smart TV Problems</h4>
+                            </div>
+                            <p class="text-sm text-gray-600">Assistance with common Smart TV software and functionality issues.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gallery Section (Custom Images & Work Showcase) -->
+            <section id="gallery" class="py-16 bg-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center max-w-3xl mx-auto mb-12">
+                        <h2 class="text-xs uppercase tracking-widest text-orange font-black mb-2">Our Work</h2>
+                        <h3 class="text-3xl font-black text-charcoal">Service & Repair Gallery</h3>
+                        <p class="text-gray-600 mt-2">Glimpses of professional technician visits, diagnostics, and repairs.</p>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-gray-100 rounded-2xl overflow-hidden shadow-sm border border-gray-200 group relative h-64 flex items-center justify-center">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiaGCY00sOaHK1GZRP_h_74MEdbvwMEqxJOMez7wS3ysqldZfbWvRhqQ9H&s=10" alt="LED TV Repair" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent flex items-end p-4">
+                                <span class="text-white font-bold text-sm">Precision LED TV Motherboard Repair</span>
+                            </div>
+                        </div>
+                        <div class="bg-gray-100 rounded-2xl overflow-hidden shadow-sm border border-gray-200 group relative h-64 flex items-center justify-center">
+                            <img src="https://dms.mydukaan.io/original/webp/media/4fd8fc95-462f-40a2-bc23-ce9479359f3e.jpg" alt="Smart TV Diagnosis" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent flex items-end p-4">
+                                <span class="text-white font-bold text-sm">Smart TV Home Diagnosis Visit</span>
+                            </div>
+                        </div>
+                        <div class="bg-gray-100 rounded-2xl overflow-hidden shadow-sm border border-gray-200 group relative h-64 flex items-center justify-center">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgiK4tk9V3A38OuaoPvaejT-Y5aJXN5Xh4WyiUowKXWbVmR6Gyoc5F0SkV&s=10" alt="Display Troubleshooting" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent flex items-end p-4">
+                                <span class="text-white font-bold text-sm">Display & Backlight Troubleshooting</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TV Brands Section -->
+            <section class="py-16 bg-gray-50 border-y border-gray-200">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h2 class="text-xs uppercase tracking-widest text-orange font-black mb-2">Compatibility</h2>
+                    <h3 class="text-3xl font-black text-charcoal mb-4">All VU TV types We Service</h3>
+                    <p class="text-gray-600 max-w-2xl mx-auto mb-10">We troubleshoot and service a wide range of television brands and models at your doorstep.</p>
+                    
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+                        <div class="bg-white border border-gray-200 py-4 px-6 rounded-xl font-bold text-charcoal shadow-sm">Vu Masterpiece QLED Series </div>
+                        <div class="bg-white border border-gray-200 py-4 px-6 rounded-xl font-bold text-charcoal shadow-sm">Vu Glo MiniLED Series</div>
+                        <div class="bg-white border border-gray-200 py-4 px-6 rounded-xl font-bold text-charcoal shadow-sm">Vu Vibe DV</div>
+                        <div class="bg-white border border-gray-200 py-4 px-6 rounded-xl font-bold text-charcoal shadow-sm">Vu Vibe / Vibe DV QLED TV</div>
+                        <div class="bg-white border border-gray-200 py-4 px-6 rounded-xl font-bold text-charcoal shadow-sm">Vu Glo DV TV</div>
+                        <div class="bg-white border border-gray-200 py-4 px-6 rounded-xl font-bold text-charcoal shadow-sm">and many more...</div>
+
+                    </div>
+                    <p class="text-xs text-gray-500 mt-6">*Brand names are used solely for identification purposes to indicate repair compatibility.</p>
+                </div>
+            </section>
+
+            <!-- How It Works Section -->
+            <section id="how-it-works" class="py-16 bg-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center max-w-3xl mx-auto mb-12">
+                        <h2 class="text-xs uppercase tracking-widest text-orange font-black mb-2">Simple Process</h2>
+                        <h3 class="text-3xl font-black text-charcoal">How It Works</h3>
+                        <p class="text-gray-600 mt-2">Getting your TV repaired at home is quick and straightforward.</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div class="bg-gray-50 p-6 rounded-2xl shadow-sm border border-gray-200 relative">
+                            <div class="w-10 h-10 bg-orange text-white rounded-full flex items-center justify-center font-bold mb-4 shadow">1</div>
+                            <h4 class="text-lg font-bold text-charcoal mb-2">Book a Service</h4>
+                            <p class="text-sm text-gray-600">Fill out the online booking form or contact us directly.</p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-2xl shadow-sm border border-gray-200 relative">
+                            <div class="w-10 h-10 bg-orange text-white rounded-full flex items-center justify-center font-bold mb-4 shadow">2</div>
+                            <h4 class="text-lg font-bold text-charcoal mb-2">Confirm Your Request</h4>
+                            <p class="text-sm text-gray-600">Our team contacts you to discuss and confirm the service request.</p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-2xl shadow-sm border border-gray-200 relative">
+                            <div class="w-10 h-10 bg-orange text-white rounded-full flex items-center justify-center font-bold mb-4 shadow">3</div>
+                            <h4 class="text-lg font-bold text-charcoal mb-2">Technician Visit</h4>
+                            <p class="text-sm text-gray-600">A technician visits your provided address at your preferred time.</p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-2xl shadow-sm border border-gray-200 relative">
+                            <div class="w-10 h-10 bg-orange text-white rounded-full flex items-center justify-center font-bold mb-4 shadow">4</div>
+                            <h4 class="text-lg font-bold text-charcoal mb-2">Repair & Service</h4>
+                            <p class="text-sm text-gray-600">The technician diagnoses the issue and performs repair after discussing work and charges.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Booking Section & WhatsApp CTA -->
+            <section id="booking" class="py-20 bg-charcoal text-white relative">
+                <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                    <div class="text-center mb-10">
+                        <h2 class="text-xs uppercase tracking-widest text-orange font-black mb-2">Appointment</h2>
+                        <h3 class="text-3xl font-bold">Book TV Repair at Your Home</h3>
+                        <p class="text-gray-300 mt-2">Fill out the form below to send booking details directly via WhatsApp.</p>
+                        
+                        <div class="mt-6">
+                            <a href="https://wa.me/919718967233?text=Hello%20VU%20Service%20Center,%20I%20would%20like%20to%20book%20a%20TV%20repair%20service%20at%20my%20home.%0AName:%0ATV%20Brand:%0ATV%20Problem:%0AAddress:%0APreferred%20Date:%0APreferred%20Time:" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl font-bold shadow-lg transition">
+                                <i class="fa-brands fa-whatsapp text-xl"></i> Book via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Booking Form -->
+                    <div class="bg-white text-gray-800 p-8 sm:p-10 rounded-3xl shadow-2xl">
+                        <form id="tv-booking-form" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="fullName" class="block text-sm font-bold text-gray-700 mb-2">Full Name *</label>
+                                    <input type="text" id="fullName" name="fullName" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-orange focus:border-orange outline-none transition" placeholder="Enter your full name">
+                                </div>
+                                <div>
+                                    <label for="mobileNumber" class="block text-sm font-bold text-gray-700 mb-2">Mobile Number *</label>
+                                    <input type="tel" id="mobileNumber" name="mobileNumber" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-orange focus:border-orange outline-none transition" placeholder="Enter 10-digit mobile number">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="tvBrand" class="block text-sm font-bold text-gray-700 mb-2">TV Brand *</label>
+                                    <select id="tvBrand" name="tvBrand" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-orange focus:border-orange outline-none transition bg-white">
+                                        <option value="">Select TV Brand</option>
+                                        <option value="VU">VU</option>
+                                        <option value="Samsung">Samsung</option>
+                                        <option value="LG">LG</option>
+                                        <option value="Sony">Sony</option>
+                                        <option value="Xiaomi">Xiaomi</option>
+                                        <option value="OnePlus">OnePlus</option>
+                                        <option value="TCL">TCL</option>
+                                        <option value="Panasonic">Panasonic</option>
+                                        <option value="Hisense">Hisense</option>
+                                        <option value="Other">Other Brand</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="tvType" class="block text-sm font-bold text-gray-700 mb-2">TV Type *</label>
+                                    <select id="tvType" name="tvType" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-orange focus:border-orange outline-none transition bg-white">
+                                        <option value="">Select TV Type</option>
+                                        <option value="LED">LED TV</option>
+                                        <option value="LCD">LCD TV</option>
+                                        <option value="Smart TV">Smart TV</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="tvProblem" class="block text-sm font-bold text-gray-700 mb-2">TV Problem *</label>
+                                <select id="tvProblem" name="tvProblem" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-orange focus:border-orange outline-none transition bg-white">
+                                    <option value="">Select TV Problem</option>
+                                    <option value="TV Not Turning On">TV Not Turning On</option>
+                                    <option value="No Display">No Display</option>
+                                    <option value="Black Screen">Black Screen</option>
+                                    <option value="No Sound">No Sound</option>
+                                    <option value="Screen/Picture Problem">Screen / Picture Problem</option>
+                                    <option value="HDMI/Port Problem">HDMI / Port Problem</option>
+                                    <option value="Smart TV Problem">Smart TV / Software Problem</option>
+                                    <option value="Other">Other Issue</option>
+                                </select>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="completeAddress" class="block text-sm font-bold text-gray-700 mb-2">Complete Address *</label>
+                                    <input type="text" id="completeAddress" name="completeAddress" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-orange focus:border-orange outline-none transition" placeholder="House No, Building, Street">
+                                </div>
+                                <div>
+                                    <label for="areaSector" class="block text-sm font-bold text-gray-700 mb-2">Area / Sector / Street *</label>
+                                    <input type="text" id="areaSector" name="areaSector" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-orange focus:border-orange outline-none transition" placeholder="e.g. Mayur Vihar Phase 3 / Sector 51 Noida">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="preferredDate" class="block text-sm font-bold text-gray-700 mb-2">Preferred Date *</label>
+                                    <input type="date" id="preferredDate" name="preferredDate" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-orange focus:border-orange outline-none transition bg-white">
+                                </div>
+                                <div>
+                                    <label for="preferredTime" class="block text-sm font-bold text-gray-700 mb-2">Preferred Time *</label>
+                                    <select id="preferredTime" name="preferredTime" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-orange focus:border-orange outline-none transition bg-white">
+                                        <option value="">Select Time Slot</option>
+                                        <option value="Morning (9 AM - 12 PM)">Morning (9:00 AM - 12:00 PM)</option>
+                                        <option value="Afternoon (12 PM - 4 PM)">Afternoon (12:00 PM - 4:00 PM)</option>
+                                        <option value="Evening (4 PM - 8 PM)">Evening (4:00 PM - 8:00 PM)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="additionalDetails" class="block text-sm font-bold text-gray-700 mb-2">Additional Problem Details (Optional)</label>
+                                <textarea id="additionalDetails" name="additionalDetails" rows="3" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-orange focus:border-orange outline-none transition" placeholder="Describe any specific symptoms or model number if known..."></textarea>
+                            </div>
+
+                            <div>
+                                <button type="submit" class="w-full bg-orange hover:bg-orange-dark text-white font-bold py-4 px-6 rounded-xl shadow-lg transition transform active:scale-98 flex items-center justify-center gap-2">
+                                    <i class="fa-solid fa-paper-plane"></i> Request Service via WhatsApp
+                                </button>
+                                <p class="text-xs text-gray-500 text-center mt-3">Clicking this will instantly open WhatsApp with your booking details.</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Us Section -->
+            <section id="about" class="py-16 bg-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                        <div class="lg:col-span-6 space-y-6">
+                            <h2 class="text-xs uppercase tracking-widest text-orange font-black">About Our Business</h2>
+                            <h3 class="text-3xl font-black text-charcoal">About VU Service Center</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                VU Service Center provides convenient TV repair and home service in Mayur Vihar Phase 3, Noida, and surrounding areas. Customers can request a technician visit for troubleshooting and repair of common LED, LCD and Smart TV problems.
+                            </p>
+                            <div class="bg-gray-50 border-l-4 border-orange p-4 rounded-r-xl">
+                                <h4 class="font-bold text-charcoal text-sm mb-1"><i class="fa-solid fa-location-dot text-orange mr-1"></i> Primary Service Location</h4>
+                                <p class="text-sm text-gray-600">Plot No - 2C 68, Hoshiyarpur, Block E, Sector 51, Noida & Mayur Vihar Phase 3, Delhi/UP Border</p>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-6 bg-gray-50 p-8 rounded-3xl border border-gray-200 space-y-6">
+                            <h4 class="text-xl font-bold text-charcoal">Why Customers Trust Us</h4>
+                            <ul class="space-y-4 text-sm text-gray-700">
+                                <li class="flex items-start gap-3">
+                                    <i class="fa-solid fa-circle-check text-orange mt-1"></i>
+                                    <span><strong>Convenient home service:</strong> Technicians arrive at your scheduled time and location.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fa-solid fa-circle-check text-orange mt-1"></i>
+                                    <span><strong>Easy booking:</strong> Quick online form or direct WhatsApp/Phone booking options.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fa-solid fa-circle-check text-orange mt-1"></i>
+                                    <span><strong>Professional troubleshooting:</strong> Expert inspection of display, power, audio, and board issues.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fa-solid fa-circle-check text-orange mt-1"></i>
+                                    <span><strong>Service warranty:</strong> Eligible repairs include a 90-day service warranty subject to terms.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 90-Day Warranty Section -->
+            <section id="warranty" class="py-16 bg-gray-50 border-t border-gray-200">
+                <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="bg-white border border-gray-200 p-8 sm:p-10 rounded-3xl shadow-sm">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-12 h-12 bg-orange text-white rounded-2xl flex items-center justify-center text-xl shadow font-bold">
+                                <i class="fa-solid fa-shield-cat"></i>
+                            </div>
+                            <div>
+                                <h2 class="text-xs uppercase tracking-widest text-orange font-black">Assurance</h2>
+                                <h3 class="text-2xl font-black text-charcoal">90-Day Service Warranty</h3>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 font-medium mb-6">
+                            Eligible repair services are covered by a 90-day service warranty, subject to the warranty terms and exclusions.
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-600">
+                            <div class="bg-gray-50 p-4 rounded-xl border border-gray-200">
+                                <i class="fa-solid fa-circle-check text-orange mr-2"></i>
+                                <span>Applies only to eligible repair/service work performed.</span>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-xl border border-gray-200">
+                                <i class="fa-solid fa-calendar-days text-orange mr-2"></i>
+                                <span>Warranty period is 90 days from the applicable service/repair date.</span>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-xl border border-gray-200">
+                                <i class="fa-solid fa-circle-xmark text-red-500 mr-2"></i>
+                                <span>Does not automatically cover unrelated faults or new issues.</span>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-xl border border-gray-200">
+                                <i class="fa-solid fa-triangle-exclamation text-red-500 mr-2"></i>
+                                <span>Physical damage, liquid damage, misuse, or unauthorized repairs are excluded.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section class="py-16 bg-white border-t border-gray-200">
+                <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-12">
+                        <h2 class="text-xs uppercase tracking-widest text-orange font-black mb-2">Got Questions?</h2>
+                        <h3 class="text-3xl font-black text-charcoal">Frequently Asked Questions</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="bg-gray-50 border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                            <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-bold text-charcoal flex justify-between items-center focus:outline-none">
+                                <span>Do you provide TV repair at home in Mayur Vihar & Noida?</span>
+                                <i class="fa-solid fa-chevron-down text-orange transition-transform"></i>
+                            </button>
+                            <div class="faq-content hidden px-6 pb-4 text-sm text-gray-600 border-t border-gray-200 pt-3">
+                                Yes, customers can request a home technician visit across Mayur Vihar Phase 3, Noida Sector 51, and all surrounding 10km streets and sectors.
+                            </div>
+                        </div>
+                        <div class="bg-gray-50 border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                            <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-bold text-charcoal flex justify-between items-center focus:outline-none">
+                                <span>Which TV brands do you service?</span>
+                                <i class="fa-solid fa-chevron-down text-orange transition-transform"></i>
+                            </button>
+                            <div class="faq-content hidden px-6 pb-4 text-sm text-gray-600 border-t border-gray-200 pt-3">
+                                We service all leading TV brands including VU, Samsung, LG, Sony, Xiaomi, OnePlus, TCL, Panasonic, and Hisense.
+                            </div>
+                        </div>
+                        <div class="bg-gray-50 border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                            <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-bold text-charcoal flex justify-between items-center focus:outline-none">
+                                <span>Is there a warranty on repairs?</span>
+                                <i class="fa-solid fa-chevron-down text-orange transition-transform"></i>
+                            </button>
+                            <div class="faq-content hidden px-6 pb-4 text-sm text-gray-600 border-t border-gray-200 pt-3">
+                                Yes, eligible repair services include a 90-day service warranty subject to standard warranty terms and exclusions.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="py-16 bg-gray-50 border-t border-gray-200">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center max-w-3xl mx-auto mb-12">
+                        <h2 class="text-xs uppercase tracking-widest text-orange font-black mb-2">Get in Touch</h2>
+                        <h3 class="text-3xl font-black text-charcoal">Contact VU Service Center</h3>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                        <div class="lg:col-span-5 bg-white border border-gray-200 p-8 rounded-3xl space-y-6 shadow-sm">
+                            <h4 class="text-xl font-bold text-charcoal">Service Center Details</h4>
+                            <div class="space-y-4 text-sm text-gray-700">
+                                <div class="flex items-start gap-3">
+                                    <div class="w-10 h-10 bg-orange/10 text-orange rounded-xl flex items-center justify-center shrink-0 font-bold">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                    <div>
+                                        <strong class="block text-charcoal">Phone / WhatsApp</strong>
+                                        <a href="tel:+919718967233" class="text-orange hover:underline font-bold">+91 97189 67233</a>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <div class="w-10 h-10 bg-orange/10 text-orange rounded-xl flex items-center justify-center shrink-0 font-bold">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <div>
+                                        <strong class="block text-charcoal">Address</strong>
+                                        <span>Plot No - 2C 68, Hoshiyarpur, Block E, Sector 51, Noida & Mayur Vihar Phase 3, Uttar Pradesh 201303</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pt-4 flex flex-col sm:flex-row gap-3">
+                                <a href="tel:+919718967233" class="flex-1 bg-orange hover:bg-orange-dark text-white font-bold py-3 px-4 rounded-xl text-center shadow transition flex items-center justify-center gap-2">
+                                    <i class="fa-solid fa-phone"></i> Call Now
+                                </a>
+                                <a href="https://wa.me/919718967233?text=Hello%20VU%20Service%20Center,%20I%20would%20like%20to%20inquire%20about%20TV%20repair." target="_blank" rel="noopener" class="flex-1 bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-4 rounded-xl text-center shadow transition flex items-center justify-center gap-2">
+                                    <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+                                </a>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-7 bg-white rounded-3xl overflow-hidden border border-gray-200 h-[400px] flex flex-col items-center justify-center p-6 text-center shadow-sm">
+                            <div class="w-16 h-16 bg-orange/20 text-orange rounded-full flex items-center justify-center text-2xl mb-4 shadow-inner">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                            </div>
+                            <h4 class="text-lg font-bold text-charcoal mb-2">Mayur Vihar Phase 3 & Noida Sector 51 Coverage</h4>
+                            <p class="text-sm text-gray-600 max-w-md mb-4">Plot No - 2C 68, Hoshiyarpur, Block E, Sector 51, Noida, Uttar Pradesh 201303, India</p>
+                            <a href="https://maps.google.com/?q=Plot+No+2C+68+Hoshiyarpur+Block+E+Sector+51+Noida" target="_blank" rel="noopener" class="bg-gray-100 hover:bg-gray-200 text-charcoal font-bold px-6 py-2.5 rounded-xl border border-gray-300 shadow-sm transition text-sm flex items-center gap-2">
+                                <i class="fa-solid fa-diamond-turn-right text-orange"></i> Open in Google Maps
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div><!-- /page-home -->
+
+        <!-- ================= 10KM SEO & COVERAGE PAGE VIEW ================= -->
+        <div id="page-coverage" class="page-view hidden py-16 bg-white">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+                <div>
+                    <a href="#home" onclick="showPage('home')" class="text-orange font-bold text-sm hover:underline inline-flex items-center gap-1 mb-4">
+                        <i class="fa-solid fa-arrow-left"></i> Back to Home
+                    </a>
+                    <h1 class="text-3xl sm:text-4xl font-black text-charcoal">TV Repair Service Coverage (15km Radius from Mayur Vihar Phase 3 & Sector 51 Noida)</h1>
+                    <p class="text-gray-600 mt-2">We provide doorstep TV technician visits across every street, block, apartment, and society within a 15-kilometer radius of Mayur Vihar Phase 3 and Sector 51 Noida.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-4">
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 shadow-sm">
+                        <h3 class="font-bold text-charcoal text-lg mb-2 text-orange"><i class="fa-solid fa-location-dot mr-1"></i> Mayur Vihar Phase 3 & Nearby</h3>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Pocket A, B, C, D, E, F, G, H, J</li>
+                            <li>• Kondli Pocket blocks & Main Market</li>
+                            <li>• Gharoli Extn & Gharoli Village</li>
+                            <li>• Vasundhara Enclave (All Apartments)</li>
+                            <li>• New Kondli Road & Mandawali</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 shadow-sm">
+                        <h3 class="font-bold text-charcoal text-lg mb-2 text-orange"><i class="fa-solid fa-location-dot mr-1"></i> Noida Sector 51 & Surroundings</h3>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Hoshiyarpur (Block A, B, C, D, E, F)</li>
+                            <li>• Noida Sector 50, Sector 51, Sector 52</li>
+                            <li>• Noida Sector 53, Sector 34, Sector 35</li>
+                            <li>• Sector 61, Sector 62, Sector 71, Sector 72</li>
+                            <li>• Fortis Hospital area & Bishanpura</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 shadow-sm">
+                        <h3 class="font-bold text-charcoal text-lg mb-2 text-orange"><i class="fa-solid fa-location-dot mr-1"></i> Extended 10km Radius Streets & Localities</h3>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Patparganj Industrial Area & Mandawali</li>
+                            <li>• New Ashok Nagar & Dallupura</li>
+                            <li>• Mayur Vihar Phase 1 & Phase 2</li>
+                            <li>• Noida Sector 58, 59, 63, 64</li>
+                            <li>• Crossing & Small internal lanes/streets</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-orange-light p-6 rounded-2xl border border-orange/20 text-charcoal space-y-3">
+                    <h3 class="font-bold text-lg text-orange"><i class="fa-solid fa-bullseye mr-2"></i> Local SEO Guarantee</h3>
+                    <p class="text-sm">Whether you search for <em>"LED TV repair near Mayur Vihar Phase 3"</em>, <em>"TV technician near Sector 51 Noida"</em>, or request home service for smaller lanes and apartment complexes in this 10km zone, our local field technicians reach your doorstep promptly.</p>
+                </div>
+            </div>
+        </div><!-- /page-coverage -->
+
+        <!-- ================= PRIVACY POLICY PAGE VIEW ================= -->
+        <div id="page-privacy" class="page-view hidden py-16 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+                <div>
+                    <a href="#home" onclick="showPage('home')" class="text-orange font-bold text-sm hover:underline inline-flex items-center gap-1 mb-4">
+                        <i class="fa-solid fa-arrow-left"></i> Back to Home
+                    </a>
+                    <h1 class="text-3xl sm:text-4xl font-black text-charcoal">Privacy Policy</h1>
+                    <p class="text-xs text-gray-500 mt-1">Last Updated: 2026</p>
+                </div>
+                <div class="prose max-w-none text-gray-700 space-y-6 text-sm sm:text-base leading-relaxed">
+                    <p>VU Service Center respects your privacy. This Privacy Policy outlines how we collect, use, and protect your information when you interact with our website or book our TV repair and home services.</p>
+                    <h2 class="text-xl font-bold text-charcoal pt-4">1. Information Collected Through Booking Forms</h2>
+                    <p>When you request a service, we collect your Full Name, Mobile Number, Complete Address (Mayur Vihar/Noida), TV brand, problem details, and preferred schedule.</p>
+                    <h2 class="text-xl font-bold text-charcoal pt-4">2. How Information is Used</h2>
+                    <p>Customer information is used strictly for handling service requests, scheduling technician home visits, and related communication regarding your repair.</p>
+                </div>
+            </div>
+        </div><!-- /page-privacy -->
+
+        <!-- ================= TERMS & CONDITIONS PAGE VIEW ================= -->
+        <div id="page-terms" class="page-view hidden py-16 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+                <div>
+                    <a href="#home" onclick="showPage('home')" class="text-orange font-bold text-sm hover:underline inline-flex items-center gap-1 mb-4">
+                        <i class="fa-solid fa-arrow-left"></i> Back to Home
+                    </a>
+                    <h1 class="text-3xl sm:text-4xl font-black text-charcoal">Terms & Conditions</h1>
+                    <p class="text-xs text-gray-500 mt-1">Last Updated: 2026</p>
+                </div>
+                <div class="prose max-w-none text-gray-700 space-y-6 text-sm sm:text-base leading-relaxed">
+                    <p>Please read these Terms & Conditions carefully before booking a TV repair service with VU Service Center.</p>
+                    <h2 class="text-xl font-bold text-charcoal pt-4">1. Service Booking & Technician Visits</h2>
+                    <p>Submitting a booking request initiates a verification callback from our team. Technicians diagnose issues onsite and explain charges before any repair work begins.</p>
+                    <h2 class="text-xl font-bold text-charcoal pt-4">2. 90-Day Warranty</h2>
+                    <p>Eligible repair services include a 90-day warranty on repaired components, excluding physical or liquid damages.</p>
+                </div>
+            </div>
+        </div><!-- /page-terms -->
+
+    </main>
+
+    <!-- Disclaimer Section -->
+    <div class="bg-gray-100 border-t border-gray-200 py-6 px-4 text-center text-xs text-gray-600">
+        <div class="max-w-7xl mx-auto">
+            <p><strong>Disclaimer:</strong> "VU Service Center is an independent TV repair and home service provider. Brand names are used only to identify compatible TV products/services and do not imply authorization, sponsorship or affiliation unless specifically stated."</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div class="space-y-4 md:col-span-1">
+                <div class="flex items-center gap-2">
+                    <div class="bg-orange text-white p-2 rounded-lg flex items-center justify-center font-bold">
+                        <i class="fa-solid fa-tv"></i>
+                    </div>
+                    <span class="text-lg font-bold text-white">VU Service Center</span>
+                </div>
+                <p class="text-sm">TV Repair & Home Service in Mayur Vihar Phase 3 & Noida.</p>
+                <div class="text-sm space-y-1">
+                    <p><strong class="text-gray-300">Phone:</strong> <a href="tel:+919718967233" class="hover:text-white">+91 97189 67233</a></p>
+                    <p><strong class="text-gray-300">Address:</strong> Plot No - 2C 68, Hoshiyarpur, Sector 51, Noida & Mayur Vihar Phase 3</p>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#home" onclick="showPage('home')" class="hover:text-white transition">Home</a></li>
+                    <li><a href="#services" onclick="showPage('home'); scrollToSection('services');" class="hover:text-white transition">Services</a></li>
+                    <li><a href="#coverage" onclick="showPage('coverage')" class="hover:text-orange transition font-bold">10km Coverage (SEO)</a></li>
+                    <li><a href="#gallery" onclick="showPage('home'); scrollToSection('gallery');" class="hover:text-white transition">Gallery</a></li>
+                    <li><a href="#about" onclick="showPage('home'); scrollToSection('about');" class="hover:text-white transition">About</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Legal</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#warranty" onclick="showPage('home'); scrollToSection('warranty');" class="hover:text-white transition">Warranty</a></li>
+                    <li><a href="#privacy" onclick="showPage('privacy')" class="hover:text-white transition">Privacy Policy</a></li>
+                    <li><a href="#terms" onclick="showPage('terms')" class="hover:text-white transition">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Service Areas</h4>
+                <p class="text-sm leading-relaxed">
+                    Mayur Vihar Phase 3, Hoshiyarpur, Sector 51 Noida and all streets within a 10km radius.
+                </p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-gray-800 text-center text-xs text-gray-500">
+            <p>&copy; 2026 VU Service Center. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons (Phone & WhatsApp) -->
+    <div class="fixed bottom-6 right-6 z-40 flex flex-col gap-3">
+        <a href="https://wa.me/919718967233?text=Hello%20VU%20Service%20Center,%20I%20would%20like%20to%20inquire%20about%20TV%20repair." target="_blank" rel="noopener" class="w-14 h-14 bg-green-600 hover:bg-green-700 text-white rounded-full flex items-center justify-center text-2xl shadow-xl transition transform hover:scale-110" aria-label="Chat on WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="tel:+919718967233" class="w-14 h-14 bg-orange hover:bg-orange-dark text-white rounded-full flex items-center justify-center text-xl shadow-xl transition transform hover:scale-110" aria-label="Call Now">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- JavaScript Functionality -->
+    <script>
+        // Toggle Mobile Menu
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        if(menuBtn) {
+            menuBtn.addEventListener('click', toggleMobileMenu);
+        }
+
+        // Single Page Application View Switcher
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('.page-view');
+            pages.forEach(page => page.classList.add('hidden'));
+
+            const targetPage = document.getElementById('page-' + pageId);
+            if(targetPage) {
+                targetPage.classList.remove('hidden');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+
+        // Smooth scroll to section on Home page
+        function scrollToSection(sectionId) {
+            showPage('home');
+            setTimeout(() => {
+                const element = document.getElementById(sectionId);
+                if(element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 50);
+        }
+
+        // FAQ Accordion Toggle
+        function toggleFaq(button) {
+            const content = button.nextElementSibling;
+            content.classList.toggle('hidden');
+            const chevron = button.querySelector('.fa-chevron-down');
+            if(chevron) {
+                chevron.style.transform = content.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+            }
+        }
+
+        // Booking Form Direct WhatsApp Integration Handler
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('fullName').value;
+            const phone = document.getElementById('mobileNumber').value;
+            const brand = document.getElementById('tvBrand').value;
+            const type = document.getElementById('tvType').value;
+            const problem = document.getElementById('tvProblem').value;
+            const address = document.getElementById('completeAddress').value;
+            const area = document.getElementById('areaSector').value;
+            const date = document.getElementById('preferredDate').value;
+            const time = document.getElementById('preferredTime').value;
+            const details = document.getElementById('additionalDetails').value;
+
+            // WhatsApp Form Message Format
+            const message = `*New Service Request (Website Form)*%0A%0A` +
+                            `*Name:* ${name}%0A` +
+                            `*Phone:* ${phone}%0A` +
+                            `*TV Brand:* ${brand}%0A` +
+                            `*TV Type:* ${type}%0A` +
+                            `*Problem:* ${problem}%0A` +
+                            `*Address:* ${address}, ${area}%0A` +
+                            `*Preferred Date:* ${date}%0A` +
+                            `*Preferred Time:* ${time}%0A` +
+                            `*Additional Details:* ${details || 'None'}`;
+
+            // Open WhatsApp with prefilled message
+            const whatsappURL = `https://wa.me/919718967233?text=${message}`;
+            window.open(whatsappURL, '_blank');
+        }
+
+        // Set minimum date for booking form
+        const dateInput = document.getElementById('preferredDate');
+        if(dateInput) {
+            const today = new Date().toISOString().split('T')[0];
+            dateInput.min = today;
+        }
+    </script>
+</body>
+</html>
