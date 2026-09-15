@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://AapkaUsername.github.io/AapkaRepoName/sitemap.xml
+Sitemap: https://vuservicecenternoida.com/sitemap.xml
